@@ -25,7 +25,7 @@ public class Sketch {
   };                             
   public int linearSearch(int catNumToFind){
     for (int i = 0; i < store.length; i++){
-      if (Store[i].getCatNum() == catNumToFind){
+      if (store[i].getCatNum() == catNumToFind){
         return i;
       }
     }
