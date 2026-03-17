@@ -35,11 +35,11 @@ public class Sketch {
   public int recursiveLinearSearch(int catNumToFind, int startIndex){
     if (startIndex >= store.length){
       return -1;
-    } else if (Store[startIndex].getCatNum() == catNumToFind){
+    } else if (store[startIndex].getCatNum() == catNumToFind){
       return startIndex;
     }
 
-    return recursiveLinearSearch(catNumToFind + 1);
+    return recursiveLinearSearch(catNumToFind, startIndex + 1);
   }
   public int binarySearch(int catNumToFind){
     int low = 0;
