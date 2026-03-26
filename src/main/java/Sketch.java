@@ -54,14 +54,15 @@ public class Sketch {
       }
 
       if (catNumToFind < store[guess].getCatNum()){
-        high = guess + 1;
+        high = guess - 1;
       } else {
-        low = guess - 1;
+        low = guess + 1;
       }
     }
 
     return -1;
   }
+
   public int recursiveBinarySearch(int catNumToFind, int nLow, int nHigh){
       int guess = (nLow + nHigh)/2;
 
